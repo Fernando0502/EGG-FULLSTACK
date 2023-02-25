@@ -1,0 +1,39 @@
+package test;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ing_j
+ */
+public class Test {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner leer=new Scanner(System.in);
+        
+        int contador = 1;
+        int suma = 0;
+        
+        do{
+            System.out.println("Ingrese valor 1:");
+        int num=leer.nextInt();
+        if(num>0){
+            suma = suma + num;
+        }else if(num<0){
+            continue;
+        
+        }else{
+            System.out.println("Se capturo el numero 0");
+            break;
+        }
+        contador++;
+    
+    
+}
+        while(contador<=20);
+        System.out.println("La suma es" + suma );
+}   
+}
